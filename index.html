@@ -1,11 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Team - Mystic Force</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background: #e6f0ff;
+      color: #003366;
+    }
+
+    header {
+      text-align: center;
+      padding: 40px 20px;
+      background: #1e3a8a;
+      color: white;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 40px auto;
+      padding: 20px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background: white;
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      transition: transform 0.2s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card h2 {
+      margin-top: 0;
+      font-size: 1.4rem;
+      color: #1e3a8a;
+    }
+
+    .role {
+      font-weight: bold;
+      margin-bottom: 10px;
+      color: #004aad;
+    }
+
+    .member-img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 15px;
+      border: 3px solid #1e3a8a;
+    }
+
+    @media (max-width: 480px) {
+      header h1 {
+        font-size: 1.8rem;
+      }
+      .card {
+        padding: 15px;
+      }
+    }
+  </style>
 </head>
 <body>
-  
+  <header>
+    <h1>Meet Our Team - Mystic Force</h1>
+    <p>Get to know the people behind this project</p>
+  </header>
+
+  <div class="container">
+    <div class="card">
+      <img src="your-image.jpg" alt="Member Image" class="member-img">
+      <h2>Lawrence Guan</h2>
+      <div class="role">Project Leader</div>
+      <p> Manages the whole project – assigns tasks, tracks progress, and ensures the team meets deadlines.</p>
+    </div>
+
+    <div class="card">
+      <img src="your-image.jpg" alt="Member Image" class="member-img">
+      <h2>Randolf Mana</h2>
+      <div class="role">Business Analyst</div>
+      <p>Connects the client and the team – gathers requirements and makes sure the software fits the business needs.</p>
+    </div>
+
+    <div class="card">
+      <img src="image/Losa, Eljay G2..jpg" alt="Member Image" class="member-img">
+      <h2>Eljay Losa</h2>
+      <div class="role">Developer</div>
+      <p>Codes the software – builds the system based on the design and requirements.</p>
+    </div>
+
+    <div class="card">
+      <img src="image/jho.jpg" alt="Member Image" class="member-img">
+      <h2>Jho Adrian Hil Macalinao</h2>
+      <div class="role">Developer</div>
+      <p>Codes the software – builds the system based on the design and requirements.</p>
+    </div>
+
+    <div class="card">
+      <img src="image/Jonas.jpg" alt="Member Image" class="member-img">
+      <h2>Jonas Miguel Mapaquit</h2>
+      <div class="role">Tester</div>
+      <p>Checks for errors/bugs – tests the software to make sure it works properly before release.</p>
+    </div>
+
+    <div class="card">
+      <img src="image/jeush.jpg" alt="Member Image" class="member-img">
+      <h2>Jeush Andrei Luna</h2>
+      <div class="role">Development and Operations</div>
+      <p>Maintains deployment & operations – handles system setup, updates, and keeps the app running smoothly.</p>
+    </div>
+  </div>
+
 </body>
 </html>
